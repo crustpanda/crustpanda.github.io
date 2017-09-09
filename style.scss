@@ -668,9 +668,9 @@ textarea {
 }
 
 button {
-    background-color: #519C79;
+    background: linear-gradient(#ffd954, #f3dd77);
+    color: #1d1d1d;
     border: none;
-    color: white;
     padding: 1.2em 1.8em;
     text-decoration: bold;
     font-weight: bold;
@@ -680,7 +680,7 @@ button {
     border-radius: 2px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-    box-shadow: 0 3px #448265;
+    box-shadow: 0 3px #c0a53c;
     outline: none;
 }
 
@@ -690,7 +690,7 @@ button:hover {
 
 button:active {
     background-color: #51839C;
-    box-shadow: 0 3px #40677A;
+    box-shadow: 0 3px #83753c;
     transform: translateY(2px);
 }
 
