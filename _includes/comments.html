@@ -1,0 +1,23 @@
+<!-- Comment form -->
+<h2>Lämna en kommentar:</h2>
+<form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+  <input name="options[redirect]" type="hidden" value="https://crustpanda.github.io/tack">
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <div class="comment-form">
+    <p>Namn:</p>
+    <input name="fields[name]" type="text">
+  </div>
+  <div class="comment-form">
+    <p>Hemsida (Valfritt):</p>
+    <input name="fields[url]" type="text"/>
+  </div>
+  <div class="comment-form">
+    <p>Meddelande (<a href="https://kramdown.gettalong.org/syntax.html">kramdown</a>-markup tillåtet):</p>
+    <textarea style="width:100%" name="fields[message]" rows="12"></textarea>
+    <p class="comment-info"><em>Din kommentar kommer att publiceras när den har verifierats.</em></p>
+    <br>
+  </div>
+  <div>
+    <button type="submit">Skicka Kommentar</button>
+  </div>
+</form>

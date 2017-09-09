@@ -1,0 +1,50 @@
+---
+layout: default2
+---
+
+  <div class="date">
+            {% assign m = page.date | date: "%-m" %}
+            {{ page.date | date: "%-d" }}
+            {% case m %}
+                {% when '1' %}Januari
+                {% when '2' %}Februari
+                {% when '3' %}Mars
+                {% when '4' %}April
+                {% when '5' %}Maj
+                {% when '6' %}Juni
+                {% when '7' %}Juli
+                {% when '8' %}Augusti
+                {% when '9' %}September
+                {% when '10' %}Oktober
+                {% when '11' %}November
+                {% when '12' %}December
+            {% endcase %}
+            {{ page.date | date: "%Y" }}   
+  </div>
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+<br>
+  
+	<ul class="tags-page">
+		{% for tag in page.tags %}
+		<li><a href="{{ site.baseurl }}/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+		{% endfor %}
+    </ul>
+    
+    
+<div class="PageNavigation">
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  {% endif %}
+</div>
+
+</article>

@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Ny design"
+date:   2016-06-19 18:05:59 +0200
+tags:
+    - CSS
+categories: jekyll update
+---
+Denna blogg har inte blivit uppdaterad på ett tag. Som så mycket annat är det i början det är som mest roligt för att sedan mattas ner. Jag har dock för avsikt att bli mer aktiv och har idag spenderat lite tid på bloggen. Det jag har gjort är att ändra designen totalt. Ni som använder Android som inte är från stenåldern känner igen designen (läs Material Design). Enkelt, kraftfullt och modernt. 

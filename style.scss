@@ -1,0 +1,727 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "reset";
+@import "variables";
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
+
+html {
+  font-size: 100%;
+  font-family: Sans-serif;
+}
+
+body {
+  background: $white;
+  color: $darkGray;
+    overflow-y: scroll;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $darkerGray;
+  font-weight: bold;
+  line-height: 1.5;
+  font-weight: normal;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 1.5em;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 18px;
+  color: $gray;
+}
+
+.entry h1, .entry h2, .entry h3, .entry h4, .entry h5 {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 14px;
+  margin: 15px 0;
+  line-height: 1.5em;
+}
+
+a {
+  color: #337AB7;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: #337AB7;
+    text-decoration: underline;
+  }
+}
+
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+  font-size: 14px;
+}
+
+.entry li {
+    font-size: 14px;
+    margin: 0px;
+    line-height: 1.5em;
+}
+
+.entry h2 {
+    font-size:18px;
+}
+
+.entry hr {
+    border-size: 10px;
+    color: red;
+}
+
+hr {
+    background: #ddd;
+    border: 0;
+    height: 1px;
+    margin: 2em 0 0 0;
+}
+
+li {
+    margin: 5px 0px 0px 0px;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+.date {
+  font-style: normal;
+  font-size:14px;
+  color: $gray;
+}
+
+.post-date {
+  font-style: normal;
+  font-size:14px;
+  color: $gray;
+  margin-bottom: -20px;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+//
+// .masthead
+//
+
+.wrapper-masthead {
+  margin-bottom: 50px;
+  background: #282828;
+    border-bottom: 3px solid #ffd954;
+}
+
+.masthead {
+  padding: 20px 0;
+  border-bottom: 0px solid $lightGray;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.site-avatar {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+  margin-top: 9px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+.site-info {
+  float: left;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Sans-Serif;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-shadow: 0px 1px 2px #4D665A;
+  a {
+      color: #ffffff;
+  }
+  a:hover {
+    color: #9ED4BB;
+    text-decoration: none;
+    text-shadow: 0px 1px 2px #4D665A;
+  }
+}
+
+.site-description {
+  margin: 0;
+  color: #ffffff;
+  font-size: 13px;
+    font-style: italic;
+text-shadow: 0px 1px 1px #5C7A6C;
+  a {
+      color: red;
+  }
+
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+nav {
+  float: right;
+  margin-top: 32px; // @TODO: Vertically middle align
+  font-size: 18px;
+  font-family: Sans-serif;
+  
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+
+  a {
+    margin-left: 20px;
+    color: #FFF;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: Sans-serif;
+    font-size: 14px;
+	text-shadow: 0px 1px 1px #5C7A6C;
+
+    @include mobile {
+      margin: 0 10px;
+      color: #FFF;
+    }
+
+  }
+  a:hover {
+    color: #f5b915;
+  text-decoration: none;
+    text-shadow: 0px 1px 2px #4D665A;
+  }
+}
+
+.site-info {
+    color: #FFF;
+}
+
+//
+// .main
+//
+
+.posts > .post {
+  padding-bottom: 1.3em;
+  border-bottom: 1px solid $lightGray;
+  margin-bottom: 2em;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-style: italic;
+  }
+  
+  .post h1 {
+    font-size: 1.7em;
+	text-decoration: none;
+    margin: 24px 0px 0px;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: normal;
+    font-size: 14px;
+  }
+
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $lightGray;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  
+  p {
+    font-family: Sans-serif;
+    font-size: 14px;
+    margin: 10px 0px -5px 0px;
+  }
+}
+
+.post-meta {
+	font-size: 14px;
+	color: #828282;
+}
+
+.post-comments {
+	font-size: 14px;
+    font-style: italic;
+	color: #828282;
+    float: right;
+    list-style-type: none;
+}
+
+.post-comments a:link, .post-comments a:visited {
+    color: #828282;
+}
+
+.posts h1 {
+	margin: 5px 0px -5px;
+	text-decoration: none;
+}
+
+.post h2, .post h3 {
+    margin-top: 25px;
+}
+
+.tags, .tags-page, .tags-cloud {
+    list-style: none;
+    margin-bottom: 30px;
+    overflow: hidden; 
+    padding: 0px 0px 0px 0px;
+}
+
+.tags-cloud {
+	padding: 0px;
+}
+
+
+#main .tags {
+  	border-bottom: solid 1px #eee;
+}
+
+.tags-page {
+	border-top: solid 1px #6B1E69;
+    border-color: #ccc;
+    padding-top: 10px;
+    margin: 2rem 0 0 0;
+}
+
+.tags li, .tags-page li, .tags-cloud li {
+    float: left; 
+}
+
+.tag {
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 12px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+    font-size: 10px;
+    border-radius: 3px;
+}
+
+.tag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+.tag::after {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+.tag:hover {
+    background-color: #f5b915;
+    color: #282828;
+    text-decoration: none;
+}
+
+.tag:hover::after {
+    border-left-color: #2EAE9B; 
+}
+
+.tag:hover a:visited {
+    color: #999;
+}
+
+.tag:visited hover {
+    color: #282828;
+}
+
+.tags a:hover {
+    color: #282828;
+}
+
+h1.post-title {
+    font-size: 24px;
+}
+
+h2.tags-title  {
+    margin-top: 30px;
+    border-bottom: solid 1px #6B1E69;
+    border-color: #ccc;
+
+}
+
+.tags-title {
+    font-size: 24px;
+}
+
+.tags-date {
+    font-size: 14px;
+    color: #828282
+}
+
+.entry tags{
+    border-bottom: solid 1px #6B1E69;
+    border-color: #ccc;
+}
+
+.entry img, .content img {
+    border-radius: 3px;
+    box-shadow: 0 2px 2px #CCCCCC;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.highlighter-rouge {
+	border-radius: 2px;
+	border: 1px solid #DDD;
+	padding: 2px 4px;
+	background: #EEE;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.highlighter-rouge {
+	.highlight {
+	border: 0px;
+	overflow: auto;
+	}
+}
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
+  float: right;
+}
+
+.pagination, .previous, .next {
+	font-size: 14px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: -10px;
+
+}
+
+.previous {
+	float: left;
+}
+
+.next {
+	float: right;
+}
+
+.page_number {
+        width: 50%;
+}
+
+.related-posts {
+    border-bottom: 1px solid #CCC;
+    padding: 0 0 30px 0;
+}
+
+.related-posts h2 {
+	margin-top: 0;
+}
+
+.related-posts li {
+    font-size: 14px;
+    margin: 6px 0px 0px 20px;
+}
+
+.comments {
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 1.5em;
+}
+
+.red-note {
+	border-radius: 2px;
+	border: 1px solid #DBB;
+	padding: 2px 4px;
+	background: #FDD;
+	font-size: 12px;
+	margin-bottom: 10px;
+    p {
+        margin: 5px
+    }
+}
+
+.comments h2 {
+    margin-bottom: 0;
+}
+
+.single-comment {
+    background: #F8F8F8;
+    border: 1px solid #CCC;
+    padding: 1em 1em 0 1em;
+    border-radius: 2px;
+    margin-top: 1em;
+}
+
+.comment-date {
+    font-size: 12px;
+    color: #555;
+}
+
+.comment-compose {
+    border-top: 1px solid #CCC;
+    margin-top: 2em;
+}
+
+.comment-form {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-form p {
+    padding: 0em;
+    margin: 0.5em 0 0 0;
+}
+
+.comment-info {
+    color: #555;
+    font-size: 12px;
+    margin: 0;
+}
+
+input{
+    font-size: 14px;
+    color: #333;
+    width: 50%;
+    padding: 0.5em;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #f8f8f8;   box-sizing: border-box;
+    outline: none;
+}
+
+textarea {
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+    height: 150px;
+    padding: 0.5em;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    outline: none;
+    margin: 8px 0 0 0;
+}
+
+button {
+    background-color: #519C79;
+    border: none;
+    color: white;
+    padding: 1.2em 1.8em;
+    text-decoration: bold;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: 0 3px #448265;
+    outline: none;
+}
+
+button:hover {
+    background-color: #51839C;
+}
+
+button:active {
+    background-color: #51839C;
+    box-shadow: 0 3px #40677A;
+    transform: translateY(2px);
+}
+
+/**
+ * Tables
+ */
+table {
+  margin-bottom: $spacing-unit;
+  width: 100%;
+  text-align: $table-text-align;
+  color: lighten($text-color, 18%);
+  border-collapse: collapse;
+  border: 1px solid $grey-color-light;
+  tr {
+    &:nth-child(even) {
+      background-color: lighten($grey-color-light, 6%);
+    }
+  }
+  th, td {
+    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+  }
+  th {
+    background-color: lighten($grey-color-light, 3%);
+    border: 1px solid darken($grey-color-light, 4%);
+    border-bottom-color: darken($grey-color-light, 12%);
+  }
+  td {
+    border: 1px solid $grey-color-light;
+  }
+}
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";
