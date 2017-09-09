@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Låt mig presentera Jekyll - Ny bloggplattform"
+date:   2017-09-09 18:05:59 +0200
+tags:
+    - jekyll
+    - html
+    - css
+categories: jekyll update
+---
+
+Jag har under en tid enbart hållit mig till egen HTML och CSS och från grunden haft en blogg. Det har varit lite halvroligt ska erkännas, om än omständigt. Tidigare har jag haft en 'index.html' med länkar till andra HTML-filer. Det fungerande bra för mitt ändamål, att bara få skriva av mig ibland. Det där ibland övergick dock sedan till rätt sällan och sedan till inte alls. Nåväl. Med [Jekyll](http://jekyllrb.com/) bygger man upp en grund (om man vill, finns mallar att använda). Jag tänker inte gå in mer på den tekniska biten just nu men det kan komma längre fram. Nu kan folk även kommentera mina inlägg, enkelt följa mig med RSS.
+
+
+På återseende!
