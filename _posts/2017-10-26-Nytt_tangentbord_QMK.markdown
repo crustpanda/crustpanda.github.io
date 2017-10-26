@@ -10,9 +10,13 @@ categories: jekyll update
 ---
 
 Äntligen har jag ett nytt tangentbord. Mitt Pok3r får nu ta lite semester.
+
+
 # Bakgrund
 
 I januari förhandsbeställde jag ett tangentbord. Tangentbordet ifråga var en ISO variant av Leopold FC660M i vit utförande. Jag väntade länge. Den svarta varianten blev försenad även den men inte alls lika länge. Efter 10 månader gav jag upp, bad om att få tillbaka pengarna (det var inga problem och företaget jag förhandsbeställt igenom hade full förståelse).
+
+
 
 
 ## KBDfans gav mig hopp
@@ -29,8 +33,12 @@ Mitt nakna tangentbord.
 ![](/images/done.jpg)
 Redo att användas.
 
+
+
+
 ## Ropen skalla - QMK och öppen källkod åt alla
 
 Jag kommer skapa ett nytt inlägg om detta innehållandes mina egna filer för denna rätt ovanliga layout. Jag kanske försöker få filerna att bli inkluderade officiellt. I annat fall kommer de finnas tillgängliga på min Github.
+
 
 
