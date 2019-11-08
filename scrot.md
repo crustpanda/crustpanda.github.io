@@ -14,6 +14,7 @@ Denna setup har jag använt under en längre tid. Några små justeringar har f�
 
 
 
-
+## Dotfiles
+Jag kommer att publicera relevanta dotfiles vid ett senare tillfälle. 2017 skapade jag [förutsättningarna](https://github.com/crustpanda/dotfiles). Håll koll där och fråga om någon speciell konfigurationsfil skulle vara intressant.
 
 
