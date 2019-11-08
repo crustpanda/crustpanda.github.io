@@ -4,10 +4,17 @@ title: Aktuell scrot
 permalink: /scrot/
 ---
 
-Uppdateras lite när jag känner för det. Den senaste är alltid högst upp och en utav tre skärmar kommer att vara synliga.
+# 2019
+
+![](/images/bspwm.png)
+
+<center>Arch Linux | Bspwm | Polybar | st | Neovim | sxiv</center>
 
 
 
+
+
+## Äldre skärmdumpar
 
 ![](/images/dark.png)
 
