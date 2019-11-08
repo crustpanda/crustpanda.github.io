@@ -6,6 +6,8 @@ permalink: /scrot/
 
 # 2019
 
+Denna setup har jag använt under en längre tid. Några små justeringar har förekommit men i övrigt är jag ganska nöjd.
+
 ![](/images/bspwm.png)
 
 <center>Arch Linux | Bspwm | Polybar | st | Neovim | sxiv</center>
@@ -14,13 +16,4 @@ permalink: /scrot/
 
 
 
-## Äldre skärmdumpar
 
-![](/images/dark.png)
-
-<center>Arch Linux | Bspwm | Lemonbar | Vim</center>
-
-
-![](/images/scrot.png)
-
-<center>Arch Linux | Bspwm | Lemonbar | Pcmanfm</center>
