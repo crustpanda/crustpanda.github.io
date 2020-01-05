@@ -276,24 +276,21 @@ nav {
 
   a {
     margin-left: 20px;
-    color: red;
+    color: #000000;
+    text-decoration: underline;
     text-align: right;
-    font-weight: bold;
     letter-spacing: 1px;
-    font-family: Sans-serif;
     font-size: 14px;
-	text-shadow: 0px 1px 1px #5C7A6C;
 
     @include mobile {
       margin: 0 10px;
-      color: #FFF;
+      color: #000000;
     }
 
   }
   a:hover {
-    color: #f5b915;
-  text-decoration: none;
-    text-shadow: 0px 1px 2px #4D665A;
+    color: #0000c0;
+    text-decoration: underline;
   }
 }
 
