@@ -16,7 +16,7 @@ Första inlägget på ett par år nu. Jag ändrade dock designen nyligen och job
 Skriv följande i Firefox URL-bar:
 `about:config`
 
-Sök sedan efter `ui.context_menus.after_mouseup` och ändra dess värde till true och starta om Firefox.
+Sök sedan efter `ui.context_menus.after_mouseup` och ändra dess värde till `true` och starta om Firefox.
 
 Glöm inte att ta bort CSS-lösningen. Det räcker med en lösning på detta problem. Igenom att kommentera den relevanta delen har du kvar koden om du av någon anledning skulle vilja använda den istället.
 
