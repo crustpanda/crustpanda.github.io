@@ -8,7 +8,7 @@ tags:
 categories: jekyll update
 ---
 
-Första inlägget på ett par år nu. Jag ändrade dock designen nyligen och jobbar lite i det dolda, som synes. Jag använder liksom [tidigare]({% post_url 2017-10-09-Firefox_context %}) bspwm samt Firefox och denna post kommer handla om problemet problemet jag tidigare hade och som löstes med några rader CSS.
+Första inlägget på ett par år nu. Jag ändrade dock designen nyligen och jobbar lite i det dolda, som synes. Jag använder liksom [tidigare]({% post_url 2017-10-09-Firefox_context %}) bspwm samt Firefox och denna post kommer handla om problemet jag tidigare hade och som löstes med några rader CSS.
 
 
 # Ny lösning på problemet
