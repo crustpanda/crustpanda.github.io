@@ -22,12 +22,6 @@ layout: default
         {{ page.date | date: "%Y" }}   
 </div>
 
-<div class="post-comments">
-{% if site.data.comments[page.slug].size > 0 %}
-                <a href="{{ post.url | relative_url }}#comments">{{ site.data.comments[page.slug] | size }} Kommentar{% if site.data.comments[page.slug].size > 1 %}er{% endif %}</a>
-            {% endif %}
-</div>
-
 <article class="post">
 
     <h1>{{ page.title }}</h1>
