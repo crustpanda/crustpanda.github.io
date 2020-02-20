@@ -530,6 +530,10 @@ h2.tags-title  {
   max-width: 740px;
   margin: 0 auto;
   padding-bottom: 300px;
+
+  @include mobile {
+      padding-bottom: 0px;
+  }
 }
 
 .PageNavigation a {
